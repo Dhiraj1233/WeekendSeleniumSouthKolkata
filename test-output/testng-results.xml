@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login test failed: element click intercepted: Element <button type="submit" data-qa="login-button" class="btn btn-default">...</button> is not clickable at point (202, 434). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKDNy9uXyJYDFcVEwwYdBeMQEA" data-load-complete="true"></iframe>
+  (Session info: chrome=152.0.7977.64)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -> xpath: //button[text()='Login']]
+Session ID: 723e2936e833a789fd22a190045e34ab]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-08-30T16:22:24 IST" name="Grouping" finished-at="2026-08-30T16:22:34 IST" duration-ms="10216">
+    <groups>
+      <group name="smoke">
+        <method signature="Login_With_Invalid_Credentials.invalidUser()[pri:0, instance:com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7]" name="invalidUser" class="com.qsp.TestCases.Login_With_Invalid_Credentials"/>
+      </group> <!-- smoke -->
+      <group name="master">
+        <method signature="Login_With_Invalid_Credentials.invalidUser()[pri:0, instance:com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7]" name="invalidUser" class="com.qsp.TestCases.Login_With_Invalid_Credentials"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2026-08-30T16:22:24 IST" name="AutomationExercise" finished-at="2026-08-30T16:22:34 IST" duration-ms="10216">
+      <class name="com.qsp.TestCases.Login_With_Invalid_Credentials">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7]" started-at="2026-08-30T16:22:24 IST" name="setUp" finished-at="2026-08-30T16:22:30 IST" duration-ms="5178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidUser()[pri:0, instance:com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7]" started-at="2026-08-30T16:22:30 IST" name="invalidUser" finished-at="2026-08-30T16:22:34 IST" duration-ms="4350" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login test failed because: element click intercepted: Element <button type="submit" data-qa="login-button" class="btn btn-default">...</button> is not clickable at point (202, 434). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKDNy9uXyJYDFcVEwwYdBeMQEA" data-load-complete="true"></iframe>
+  (Session info: chrome=152.0.7977.64)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -> xpath: //button[text()='Login']]
+Session ID: 723e2936e833a789fd22a190045e34ab]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login test failed because: element click intercepted: Element <button type="submit" data-qa="login-button" class="btn btn-default">...</button> is not clickable at point (202, 434). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKDNy9uXyJYDFcVEwwYdBeMQEA" data-load-complete="true"></iframe>
+  (Session info: chrome=152.0.7977.64)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -> xpath: //button[text()='Login']]
+Session ID: 723e2936e833a789fd22a190045e34ab
+at org.testng.Assert.fail(Assert.java:111)
+at com.qsp.TestCases.Login_With_Invalid_Credentials.invalidUser(Login_With_Invalid_Credentials.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Login test failed: element click intercepted: Element <button type="submit" data-qa="login-button" class="btn btn-default">...</button> is not clickable at point (202, 434). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKDNy9uXyJYDFcVEwwYdBeMQEA" data-load-complete="true"></iframe>
+  (Session info: chrome=152.0.7977.64)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -> xpath: //button[text()='Login']]
+Session ID: 723e2936e833a789fd22a190045e34ab]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7]" started-at="2026-08-30T16:22:34 IST" name="tearDown" finished-at="2026-08-30T16:22:34 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qsp.TestCases.Login_With_Invalid_Credentials -->
+    </test> <!-- AutomationExercise -->
+  </suite> <!-- Grouping -->
+</testng-results>

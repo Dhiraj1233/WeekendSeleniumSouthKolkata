@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  AutomationExercise</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AutomationExercise</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 30 16:22:24 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10216 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qsp.TestCases.Login_With_Invalid_Credentials.invalidUser()'><b>invalidUser</b><br>Test class: com.qsp.TestCases.Login_With_Invalid_Credentials<br/>
+<a href="#Output-1850646717" onClick='toggleBox("Output-1850646717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1850646717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1850646717">
+Login test failed: element click intercepted: Element <button type="submit" data-qa="login-button" class="btn btn-default">...</button> is not clickable at point (202, 434). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKDNy9uXyJYDFcVEwwYdBeMQEA" data-load-complete="true"></iframe>
+  (Session info: chrome=152.0.7977.64)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -> xpath: //button[text()='Login']]
+Session ID: 723e2936e833a789fd22a190045e34ab<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Login test failed because: element click intercepted: Element &lt;button type=&quot;submit&quot; data-qa=&quot;login-button&quot; class=&quot;btn btn-default&quot;&gt;...&lt;/button&gt; is not clickable at point (202, 434). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=3&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CKDNy9uXyJYDFcVEwwYdBeMQEA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=152.0.7977.64)
+Build info: version: &apos;4.47.0&apos;, revision: &apos;9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 723e2936e833a789fd22a190045e34ab
+	at com.qsp.TestCases.Login_With_Invalid_Credentials.invalidUser(Login_With_Invalid_Credentials.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850646717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850646717'><pre>java.lang.AssertionError: Login test failed because: element click intercepted: Element &lt;button type=&quot;submit&quot; data-qa=&quot;login-button&quot; class=&quot;btn btn-default&quot;&gt;...&lt;/button&gt; is not clickable at point (202, 434). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260825/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=3&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CKDNy9uXyJYDFcVEwwYdBeMQEA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=152.0.7977.64)
+Build info: version: &apos;4.47.0&apos;, revision: &apos;9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [723e2936e833a789fd22a190045e34ab, clickElement {id=f.5E687DF8BF2B32E7A4B9630A3935C2D5.d.68455DD110253A855E752474893B10F4.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.64, chrome: {chromedriverVersion: 152.0.7977.64 (506c834eccea..., userDataDir: C:\Users\QSP\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54381}, goog:processID: 1656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54381/devtoo..., se:cdpVersion: 152.0.7977.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (723e2936e833a789fd22a190045e34ab)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 723e2936e833a789fd22a190045e34ab
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.qsp.TestCases.Login_With_Invalid_Credentials.invalidUser(Login_With_Invalid_Credentials.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.qsp.TestCases.Login_With_Invalid_Credentials@7c6908d7</td></tr>
+</table><p>
+</body>
+</html>

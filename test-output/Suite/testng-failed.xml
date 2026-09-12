@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.qsp.TestCases.Login_With_Invalid_Credentials">
+        <methods>
+          <include name="invalidUser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qsp.TestCases.Login_With_Invalid_Credentials -->
+      <class name="com.qsp.TestCases.Login_With_Valid_Credentials">
+        <methods>
+          <include name="validUser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qsp.TestCases.Login_With_Valid_Credentials -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
